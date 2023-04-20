@@ -1,16 +1,16 @@
 ﻿namespace pryEstructura_De_Datos
 {
-    partial class frmCola
+    partial class FrmListaSimple
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,15 +20,15 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCola));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListaSimple));
             this.btnAtras = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ltsCola = new System.Windows.Forms.ListBox();
@@ -38,11 +38,6 @@
             this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbxeliminar = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.txtTramite2 = new System.Windows.Forms.TextBox();
-            this.txtNombre2 = new System.Windows.Forms.TextBox();
-            this.txtCodigo2 = new System.Windows.Forms.TextBox();
-            this.lblTramite2 = new System.Windows.Forms.Label();
-            this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblCodigo2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbxNuevoElemento = new System.Windows.Forms.GroupBox();
@@ -53,6 +48,7 @@
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
             this.gbxeliminar.SuspendLayout();
@@ -62,22 +58,23 @@
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(441, 388);
+            this.btnAtras.Location = new System.Drawing.Point(414, 182);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
-            this.btnAtras.TabIndex = 11;
+            this.btnAtras.TabIndex = 16;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnAtras);
             this.groupBox2.Controls.Add(this.ltsCola);
             this.groupBox2.Controls.Add(this.dgvCola);
-            this.groupBox2.Location = new System.Drawing.Point(10, 193);
+            this.groupBox2.Location = new System.Drawing.Point(16, 194);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(520, 199);
-            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado en una lista y una Grilla";
             // 
@@ -131,86 +128,45 @@
             // 
             // gbxeliminar
             // 
+            this.gbxeliminar.Controls.Add(this.comboBox1);
             this.gbxeliminar.Controls.Add(this.btnEliminar);
-            this.gbxeliminar.Controls.Add(this.txtTramite2);
-            this.gbxeliminar.Controls.Add(this.txtNombre2);
-            this.gbxeliminar.Controls.Add(this.txtCodigo2);
-            this.gbxeliminar.Controls.Add(this.lblTramite2);
-            this.gbxeliminar.Controls.Add(this.lblNombre2);
             this.gbxeliminar.Controls.Add(this.lblCodigo2);
-            this.gbxeliminar.Location = new System.Drawing.Point(368, 11);
+            this.gbxeliminar.Location = new System.Drawing.Point(374, 12);
             this.gbxeliminar.Name = "gbxeliminar";
             this.gbxeliminar.Size = new System.Drawing.Size(162, 176);
-            this.gbxeliminar.TabIndex = 10;
+            this.gbxeliminar.TabIndex = 15;
             this.gbxeliminar.TabStop = false;
-            this.gbxeliminar.Text = " Elemento  Eliminsdo";
+            this.gbxeliminar.Text = " Elemento  Eliminar";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(48, 147);
+            this.btnEliminar.Font = new System.Drawing.Font("MingLiU-ExtB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(9, 74);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(139, 96);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // txtTramite2
-            // 
-            this.txtTramite2.Location = new System.Drawing.Point(48, 118);
-            this.txtTramite2.Name = "txtTramite2";
-            this.txtTramite2.Size = new System.Drawing.Size(100, 20);
-            this.txtTramite2.TabIndex = 5;
-            // 
-            // txtNombre2
-            // 
-            this.txtNombre2.Location = new System.Drawing.Point(48, 67);
-            this.txtNombre2.Name = "txtNombre2";
-            this.txtNombre2.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre2.TabIndex = 4;
-            // 
-            // txtCodigo2
-            // 
-            this.txtCodigo2.Location = new System.Drawing.Point(48, 29);
-            this.txtCodigo2.Name = "txtCodigo2";
-            this.txtCodigo2.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo2.TabIndex = 3;
-            // 
-            // lblTramite2
-            // 
-            this.lblTramite2.AutoSize = true;
-            this.lblTramite2.Location = new System.Drawing.Point(7, 121);
-            this.lblTramite2.Name = "lblTramite2";
-            this.lblTramite2.Size = new System.Drawing.Size(42, 13);
-            this.lblTramite2.TabIndex = 2;
-            this.lblTramite2.Text = "Tramite";
-            // 
-            // lblNombre2
-            // 
-            this.lblNombre2.AutoSize = true;
-            this.lblNombre2.Location = new System.Drawing.Point(7, 74);
-            this.lblNombre2.Name = "lblNombre2";
-            this.lblNombre2.Size = new System.Drawing.Size(44, 13);
-            this.lblNombre2.TabIndex = 1;
-            this.lblNombre2.Text = "Nombre";
-            // 
             // lblCodigo2
             // 
             this.lblCodigo2.AutoSize = true;
-            this.lblCodigo2.Location = new System.Drawing.Point(7, 32);
+            this.lblCodigo2.Location = new System.Drawing.Point(6, 32);
             this.lblCodigo2.Name = "lblCodigo2";
             this.lblCodigo2.Size = new System.Drawing.Size(40, 13);
             this.lblCodigo2.TabIndex = 0;
             this.lblCodigo2.Text = "Codigo";
+            this.lblCodigo2.Click += new System.EventHandler(this.lblCodigo2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 176);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // gbxNuevoElemento
@@ -222,10 +178,10 @@
             this.gbxNuevoElemento.Controls.Add(this.lblTramite);
             this.gbxNuevoElemento.Controls.Add(this.lblNombre);
             this.gbxNuevoElemento.Controls.Add(this.lblCodigo);
-            this.gbxNuevoElemento.Location = new System.Drawing.Point(175, 11);
+            this.gbxNuevoElemento.Location = new System.Drawing.Point(181, 12);
             this.gbxNuevoElemento.Name = "gbxNuevoElemento";
             this.gbxNuevoElemento.Size = new System.Drawing.Size(162, 176);
-            this.gbxNuevoElemento.TabIndex = 8;
+            this.gbxNuevoElemento.TabIndex = 13;
             this.gbxNuevoElemento.TabStop = false;
             this.gbxNuevoElemento.Text = "Nuevo Elemento ";
             // 
@@ -287,21 +243,27 @@
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Codigo";
             // 
-            // frmCola
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(56, 32);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // FrmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(556, 418);
-            this.Controls.Add(this.btnAtras);
+            this.ClientSize = new System.Drawing.Size(549, 404);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbxeliminar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbxNuevoElemento);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmCola";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmCola_Load);
+            this.ForeColor = System.Drawing.Color.BlueViolet;
+            this.Name = "FrmListaSimple";
+            this.Text = "FrmListaSimple";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
             this.gbxeliminar.ResumeLayout(false);
@@ -324,11 +286,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tramite;
         private System.Windows.Forms.GroupBox gbxeliminar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.TextBox txtTramite2;
-        private System.Windows.Forms.TextBox txtNombre2;
-        private System.Windows.Forms.TextBox txtCodigo2;
-        private System.Windows.Forms.Label lblTramite2;
-        private System.Windows.Forms.Label lblNombre2;
         private System.Windows.Forms.Label lblCodigo2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox gbxNuevoElemento;
@@ -339,6 +296,6 @@
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
-

@@ -54,5 +54,10 @@ namespace pryEstructura_De_Datos
         {
             this.Close();
         }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
