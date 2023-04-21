@@ -32,5 +32,11 @@ namespace pryEstructura_De_Datos
             {
                 Application.Exit();
             }
+        }
+
+        private void frmUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsListaDoble.cs" />
     <Compile Include="clslistasimple.cs" />
     <Compile Include="Cola.cs" />
     <Compile Include="frmCola.cs">
@@ -53,6 +54,12 @@
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDoble.Designer.cs">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListaSimple.cs">
       <SubType>Form</SubType>
@@ -84,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDoble.resx">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListaSimple.resx">
       <DependentUpon>FrmListaSimple.cs</DependentUpon>

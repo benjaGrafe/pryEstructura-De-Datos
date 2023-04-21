@@ -39,6 +39,16 @@ namespace pryEstructura_De_Datos
             get { return sig; }
             set { sig = value; }
         }
+
+
+        public Nodo anterior
+        {
+            get { return ant; }
+            set { ant = value; }
+
+        }
+
+
     }
 }
 

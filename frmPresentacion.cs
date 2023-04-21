@@ -47,5 +47,10 @@ namespace pryEstructura_De_Datos
             frmPila cola = new frmPila();
             cola.ShowDialog();
         }
+
+        private void frmPresentacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
