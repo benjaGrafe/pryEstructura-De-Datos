@@ -13,7 +13,7 @@ namespace pryEstructura_De_Datos
         private Nodo pri;
         private Nodo ult;
 
-        //declaro las dos propiedades
+        //declaro las propiedades
 
         public Nodo primero
         {
@@ -27,7 +27,7 @@ namespace pryEstructura_De_Datos
             set { ult = value;}
                  
         }
-
+        //declaro metodos
         public void agregar(Nodo nvo)
         {
             if (primero == null)
@@ -113,6 +113,87 @@ namespace pryEstructura_De_Datos
                 aux=aux.Siguiente;
             }
         }
+
+
+        public void RecorrerDes(DataGridView grilla)
+        {
+            Nodo aux = ultimo;
+            grilla.Rows.Clear();
+            while (aux != null)
+            {
+                grilla.Rows.Add(aux.Codigo + " " + aux.Nombre+ " " + aux.Tramite);
+                aux=aux.anterior;
+            }
+        }
+
+        public void RecorrerDes(ListBox lista)
+        {
+            Nodo aux = ult;
+            lista.Items.Clear();
+            while ( aux != null)
+            {
+                lista.Items.Add(aux.Codigo + " " + aux.Nombre + " " + aux.Tramite);
+                aux = aux.anterior;
+
+            }
+
+        }
+
+        public void RecorrerDes(ComboBox Combo)
+        {
+            Nodo aux = ultimo;
+            Combo.Items.Clear();
+            while( aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.anterior;
+
+            }
+        }
+
+        public void Eliminar (Int32 Codigo)
+        {
+            if (primero.Codigo == Codigo && ultimo == primero)
+            {
+                primero = null;
+                ultimo = null;
+            }
+            else
+            {
+                if (primero.Codigo == Codigo)
+                {
+                    primero = primero.Siguiente;
+                    primero.anterior = null;
+                }
+                else
+                {
+                    if (ultimo.Codigo == Codigo)
+                    {
+                        ultimo = ultimo.anterior;
+                        ultimo.anterior = null;
+                    }
+                    else
+                    {
+                        Nodo aux = primero;
+                        Nodo ant = primero;
+                        while( aux.Codigo < Codigo)
+                        {
+                            ant = aux;
+                            aux = aux.Siguiente;
+                        }
+                        ant.Siguiente = aux.Siguiente;
+                        aux = aux.Siguiente;
+                        aux.anterior = ant;
+
+                    }
+                }
+            }
+
+
+
+
+        }
+
 
        
 
