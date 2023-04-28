@@ -16,5 +16,10 @@ namespace pryEstructura_De_Datos
         {
             InitializeComponent();
         }
+
+        private void frmArbolBinario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
