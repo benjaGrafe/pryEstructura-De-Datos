@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ltsCola = new System.Windows.Forms.ListBox();
-            this.dgvCola = new System.Windows.Forms.DataGridView();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ltsLD = new System.Windows.Forms.ListBox();
+            this.dgvLD = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbxNuevoElemento = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtTramite = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtTramiteLD = new System.Windows.Forms.TextBox();
+            this.txtNombreLD = new System.Windows.Forms.TextBox();
+            this.txtCodigoLD = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbCodigoLD = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rdbAscendente = new System.Windows.Forms.RadioButton();
-            this.rdbDescendente = new System.Windows.Forms.RadioButton();
+            this.rdbDescendenteLD = new System.Windows.Forms.RadioButton();
+            this.rdbAscendenteLD = new System.Windows.Forms.RadioButton();
+            this.grvcodigoLD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbxNuevoElemento.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -60,8 +60,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.ltsCola);
-            this.groupBox2.Controls.Add(this.dgvCola);
+            this.groupBox2.Controls.Add(this.ltsLD);
+            this.groupBox2.Controls.Add(this.dgvLD);
             this.groupBox2.Location = new System.Drawing.Point(13, 203);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(520, 199);
@@ -69,53 +69,29 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado en una lista y una Grilla";
             // 
-            // ltsCola
+            // ltsLD
             // 
-            this.ltsCola.FormattingEnabled = true;
-            this.ltsCola.Location = new System.Drawing.Point(6, 19);
-            this.ltsCola.Name = "ltsCola";
-            this.ltsCola.Size = new System.Drawing.Size(141, 160);
-            this.ltsCola.TabIndex = 2;
+            this.ltsLD.FormattingEnabled = true;
+            this.ltsLD.Location = new System.Drawing.Point(6, 19);
+            this.ltsLD.Name = "ltsLD";
+            this.ltsLD.Size = new System.Drawing.Size(141, 160);
+            this.ltsLD.TabIndex = 2;
             // 
-            // dgvCola
+            // dgvLD
             // 
-            this.dgvCola.AllowUserToAddRows = false;
-            this.dgvCola.AllowUserToDeleteRows = false;
-            this.dgvCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigo,
-            this.nombre,
+            this.dgvLD.AllowUserToAddRows = false;
+            this.dgvLD.AllowUserToDeleteRows = false;
+            this.dgvLD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grvcodigoLD,
+            this.ombre,
             this.Tramite});
-            this.dgvCola.Location = new System.Drawing.Point(165, 29);
-            this.dgvCola.Name = "dgvCola";
-            this.dgvCola.ReadOnly = true;
-            this.dgvCola.RowHeadersWidth = 51;
-            this.dgvCola.Size = new System.Drawing.Size(337, 150);
-            this.dgvCola.TabIndex = 1;
-            // 
-            // codigo
-            // 
-            this.codigo.HeaderText = "cidigo";
-            this.codigo.MinimumWidth = 6;
-            this.codigo.Name = "codigo";
-            this.codigo.ReadOnly = true;
-            this.codigo.Width = 125;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "nombre";
-            this.nombre.MinimumWidth = 6;
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 125;
-            // 
-            // Tramite
-            // 
-            this.Tramite.HeaderText = "Tramite";
-            this.Tramite.MinimumWidth = 6;
-            this.Tramite.Name = "Tramite";
-            this.Tramite.ReadOnly = true;
-            this.Tramite.Width = 125;
+            this.dgvLD.Location = new System.Drawing.Point(165, 29);
+            this.dgvLD.Name = "dgvLD";
+            this.dgvLD.ReadOnly = true;
+            this.dgvLD.RowHeadersWidth = 51;
+            this.dgvLD.Size = new System.Drawing.Size(337, 150);
+            this.dgvLD.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -129,9 +105,9 @@
             // gbxNuevoElemento
             // 
             this.gbxNuevoElemento.Controls.Add(this.btnAgregar);
-            this.gbxNuevoElemento.Controls.Add(this.txtTramite);
-            this.gbxNuevoElemento.Controls.Add(this.txtNombre);
-            this.gbxNuevoElemento.Controls.Add(this.txtCodigo);
+            this.gbxNuevoElemento.Controls.Add(this.txtTramiteLD);
+            this.gbxNuevoElemento.Controls.Add(this.txtNombreLD);
+            this.gbxNuevoElemento.Controls.Add(this.txtCodigoLD);
             this.gbxNuevoElemento.Controls.Add(this.lblTramite);
             this.gbxNuevoElemento.Controls.Add(this.lblNombre);
             this.gbxNuevoElemento.Controls.Add(this.lblCodigo);
@@ -150,27 +126,28 @@
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtTramite
+            // txtTramiteLD
             // 
-            this.txtTramite.Location = new System.Drawing.Point(48, 118);
-            this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(100, 20);
-            this.txtTramite.TabIndex = 5;
+            this.txtTramiteLD.Location = new System.Drawing.Point(48, 118);
+            this.txtTramiteLD.Name = "txtTramiteLD";
+            this.txtTramiteLD.Size = new System.Drawing.Size(100, 20);
+            this.txtTramiteLD.TabIndex = 5;
             // 
-            // txtNombre
+            // txtNombreLD
             // 
-            this.txtNombre.Location = new System.Drawing.Point(48, 67);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 4;
+            this.txtNombreLD.Location = new System.Drawing.Point(48, 67);
+            this.txtNombreLD.Name = "txtNombreLD";
+            this.txtNombreLD.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreLD.TabIndex = 4;
             // 
-            // txtCodigo
+            // txtCodigoLD
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(48, 29);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigoLD.Location = new System.Drawing.Point(48, 29);
+            this.txtCodigoLD.Name = "txtCodigoLD";
+            this.txtCodigoLD.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoLD.TabIndex = 3;
             // 
             // lblTramite
             // 
@@ -203,30 +180,13 @@
             // 
             this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbCodigoLD);
             this.groupBox1.Location = new System.Drawing.Point(349, 24);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(183, 122);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(86, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(79, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Codigo";
             // 
             // btnEliminar
             // 
@@ -238,10 +198,27 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Codigo";
+            // 
+            // cmbCodigoLD
+            // 
+            this.cmbCodigoLD.FormattingEnabled = true;
+            this.cmbCodigoLD.Location = new System.Drawing.Point(86, 32);
+            this.cmbCodigoLD.Name = "cmbCodigoLD";
+            this.cmbCodigoLD.Size = new System.Drawing.Size(79, 21);
+            this.cmbCodigoLD.TabIndex = 0;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.rdbDescendente);
-            this.groupBox3.Controls.Add(this.rdbAscendente);
+            this.groupBox3.Controls.Add(this.rdbDescendenteLD);
+            this.groupBox3.Controls.Add(this.rdbAscendenteLD);
             this.groupBox3.Location = new System.Drawing.Point(347, 139);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(184, 69);
@@ -249,27 +226,51 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // rdbAscendente
+            // rdbDescendenteLD
             // 
-            this.rdbAscendente.AutoSize = true;
-            this.rdbAscendente.Location = new System.Drawing.Point(6, 18);
-            this.rdbAscendente.Name = "rdbAscendente";
-            this.rdbAscendente.Size = new System.Drawing.Size(82, 17);
-            this.rdbAscendente.TabIndex = 0;
-            this.rdbAscendente.TabStop = true;
-            this.rdbAscendente.Text = "Ascendente";
-            this.rdbAscendente.UseVisualStyleBackColor = true;
+            this.rdbDescendenteLD.AutoSize = true;
+            this.rdbDescendenteLD.Location = new System.Drawing.Point(6, 41);
+            this.rdbDescendenteLD.Name = "rdbDescendenteLD";
+            this.rdbDescendenteLD.Size = new System.Drawing.Size(89, 17);
+            this.rdbDescendenteLD.TabIndex = 1;
+            this.rdbDescendenteLD.TabStop = true;
+            this.rdbDescendenteLD.Text = "Descendente";
+            this.rdbDescendenteLD.UseVisualStyleBackColor = true;
             // 
-            // rdbDescendente
+            // rdbAscendenteLD
             // 
-            this.rdbDescendente.AutoSize = true;
-            this.rdbDescendente.Location = new System.Drawing.Point(6, 41);
-            this.rdbDescendente.Name = "rdbDescendente";
-            this.rdbDescendente.Size = new System.Drawing.Size(89, 17);
-            this.rdbDescendente.TabIndex = 1;
-            this.rdbDescendente.TabStop = true;
-            this.rdbDescendente.Text = "Descendente";
-            this.rdbDescendente.UseVisualStyleBackColor = true;
+            this.rdbAscendenteLD.AutoSize = true;
+            this.rdbAscendenteLD.Location = new System.Drawing.Point(6, 18);
+            this.rdbAscendenteLD.Name = "rdbAscendenteLD";
+            this.rdbAscendenteLD.Size = new System.Drawing.Size(82, 17);
+            this.rdbAscendenteLD.TabIndex = 0;
+            this.rdbAscendenteLD.TabStop = true;
+            this.rdbAscendenteLD.Text = "Ascendente";
+            this.rdbAscendenteLD.UseVisualStyleBackColor = true;
+            // 
+            // grvcodigoLD
+            // 
+            this.grvcodigoLD.HeaderText = "codigo";
+            this.grvcodigoLD.MinimumWidth = 6;
+            this.grvcodigoLD.Name = "grvcodigoLD";
+            this.grvcodigoLD.ReadOnly = true;
+            this.grvcodigoLD.Width = 125;
+            // 
+            // ombre
+            // 
+            this.ombre.HeaderText = "nombre";
+            this.ombre.MinimumWidth = 6;
+            this.ombre.Name = "ombre";
+            this.ombre.ReadOnly = true;
+            this.ombre.Width = 125;
+            // 
+            // Tramite
+            // 
+            this.Tramite.HeaderText = "Tramite";
+            this.Tramite.MinimumWidth = 6;
+            this.Tramite.Name = "Tramite";
+            this.Tramite.ReadOnly = true;
+            this.Tramite.Width = 125;
             // 
             // frmListaDoble
             // 
@@ -284,7 +285,7 @@
             this.Name = "frmListaDoble";
             this.Text = "frmListaDoble";
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxNuevoElemento.ResumeLayout(false);
             this.gbxNuevoElemento.PerformLayout();
@@ -299,26 +300,26 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox ltsCola;
-        private System.Windows.Forms.DataGridView dgvCola;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tramite;
+        private System.Windows.Forms.ListBox ltsLD;
+        private System.Windows.Forms.DataGridView dgvLD;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox gbxNuevoElemento;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtTramite;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtTramiteLD;
+        private System.Windows.Forms.TextBox txtNombreLD;
+        private System.Windows.Forms.TextBox txtCodigoLD;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCodigoLD;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton rdbDescendente;
-        private System.Windows.Forms.RadioButton rdbAscendente;
+        private System.Windows.Forms.RadioButton rdbDescendenteLD;
+        private System.Windows.Forms.RadioButton rdbAscendenteLD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grvcodigoLD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tramite;
     }
 }

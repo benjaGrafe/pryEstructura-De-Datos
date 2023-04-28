@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEstructura_De_Datos
 {
@@ -33,7 +34,7 @@ namespace pryEstructura_De_Datos
                 {
                     NodoPadre = Aux;
 
-                    if (Nuevo.Codigo < Aux.Codigo)
+                    if (nvo.Codigo < Aux.Codigo)
                     {
                         Aux = Aux.Izquierdo;
                     }
@@ -52,8 +53,20 @@ namespace pryEstructura_De_Datos
                 else
                 {
                     NodoPadre.Derecho = nvo;
+
                 }
+
+
             }
+
+
+        }
+
+
+        public void Recorrer(ListBox lista)
+        {
+            lista.Items.Clear();
+            inorden(lista, Raiz);
         }
     }
 }
