@@ -47,6 +47,18 @@ namespace pryEstructura_De_Datos
             set { ant = value; }
 
         }
+        public Nodo Derecho
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+
+        public Nodo Izquierdo
+        {
+            get { return ant; }
+            set { ant = value; }
+
+        }
 
 
     }
