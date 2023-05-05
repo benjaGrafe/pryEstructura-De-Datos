@@ -21,5 +21,10 @@ namespace pryEstructura_De_Datos
         {
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

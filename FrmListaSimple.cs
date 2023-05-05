@@ -24,32 +24,43 @@ namespace pryEstructura_De_Datos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (list != null)
+            if (list.primero != null)
             {
-                Int32 X = Convert.ToInt32(comboBox1.Text);
+                Int32 X = Convert.ToInt32(cmbCodigoLS.Text);
                 list.ELIMINAR(X);
-                list.Recorrer(dgvCola);
-                list.Recorrer(ltsCola);
-                list.Recorrer(comboBox1);
+                list.Recorrer(dgvListaSimple);
+                list.Recorrer(ltsListaSimple);
+                list.Recorrer(cmbCodigoLS);
 
 
             }
             else
             {
-                
+                MessageBox.Show("esta vacio");
             }
             
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-                                     
+            Nodo nodo = new Nodo();
+            nodo.Codigo = Convert.ToInt32(cmbCodigoLS.Text);
+            nodo.Nombre = txtNombre.Text;
+            nodo.Tramite = txtTramite.Text;
+
+            list.agregar(nodo);
+            list.Recorrer(cmbCodigoLS);
+            list.Recorrer(ltsListaSimple);
+            list.Recorrer(dgvListaSimple);
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
 
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

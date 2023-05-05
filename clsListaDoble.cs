@@ -80,7 +80,7 @@ namespace pryEstructura_De_Datos
 
         }
 
-        public void Recorrer(ListBox lista)
+        public void RecorrerAs(ListBox lista)
         {
             Nodo aux = primero;
             lista.Items.Clear();
@@ -91,7 +91,7 @@ namespace pryEstructura_De_Datos
             }
         }
 
-        public void Recorrer(ComboBox combo)
+        public void RecorrerAs(ComboBox combo)
         {
             Nodo aux = primero;
             combo.Items.Clear();
@@ -103,7 +103,7 @@ namespace pryEstructura_De_Datos
 
         }
 
-        public void Recorrer (DataGridView grilla)
+        public void RecorrerAs(DataGridView grilla)
         {
             Nodo aux = primero;
             grilla.Rows.Clear();

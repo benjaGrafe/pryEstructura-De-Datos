@@ -17,7 +17,7 @@ namespace pryEstructura_De_Datos
         {
             InitializeComponent();
         }
-
+        clsListaDoble objOrdenListaD = new clsListaDoble();
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
@@ -29,10 +29,10 @@ namespace pryEstructura_De_Datos
 
                 if (rdbAscendenteLD.Enabled == true)
                 {
-                    objOrdenListaD.Agregar(objNodo);
-                    objOrdenListaD.Recorrer(dgvLD);
-                    objOrdenListaD.Recorrer(ltsLD);
-                    objOrdenListaD.Recorrer(cmbCodigoLD);
+                    objOrdenListaD.agregar(objNodo);
+                    objOrdenListaD.RecorrerAs(dgvLD);
+                    objOrdenListaD.RecorrerAs(ltsLD);
+                    objOrdenListaD.RecorrerAs(cmbCodigoLD);
 
                     txtCodigoLD.Text = "";
                     txtNombreLD.Text = "";
@@ -40,7 +40,7 @@ namespace pryEstructura_De_Datos
                 }
                 else
                 {
-                    objOrdenListaD.Agregar(objNodo);
+                    objOrdenListaD.agregar(objNodo);
                     objOrdenListaD.RecorrerDes(dgvLD);
                     objOrdenListaD.RecorrerDes(ltsLD);
                     objOrdenListaD.RecorrerDes(cmbCodigoLD);
@@ -55,6 +55,18 @@ namespace pryEstructura_De_Datos
             {
 
                 MessageBox.Show("tranqui, de a poquito se hace");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if ( objOrdenListaD.primero != null )
+            {
+                Int32 Eliminar = Convert.ToInt32(cmbCodigoLD.Text);
+                objOrdenListaD.Eliminar(Eliminar);
+                objOrdenListaD.RecorrerAs(dgvLD);
+                objOrdenListaD.RecorrerAs(ltsLD);
+                objOrdenListaD.RecorrerAs(cmbCodigoLD);
             }
         }
     }
