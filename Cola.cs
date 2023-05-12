@@ -47,16 +47,6 @@ namespace pryEstructura_De_Datos
             }
 
         }
-        public void Recorrer(DataGridView Grilla)
-        {
-            Nodo aux = primero;
-            Grilla.Rows.Clear();
-            while (aux != null)
-            {
-                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
-                aux = aux.Siguiente;
-            }
-        }
         public void Recorrer(ListBox lista)
         {
             Nodo aux = primero;
@@ -67,6 +57,19 @@ namespace pryEstructura_De_Datos
                 aux = aux.Siguiente;
             }
         }
+        
+        
+        public void Recorrer(DataGridView Grilla)
+        {
+            Nodo aux = primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
+       
 
         public void Recorrer(ComboBox combo)
         {
